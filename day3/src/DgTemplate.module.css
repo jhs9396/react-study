@@ -1,0 +1,15 @@
+.rectangle {
+    border: 1px solid black;
+    pointer-events: none;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+}
+
+.circle {
+    position: absolute;
+    background-color: white;
+    border: 1px solid red;
+    border-radius: 100%;
+    display: inline-block;
+}
