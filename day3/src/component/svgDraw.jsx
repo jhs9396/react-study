@@ -1,8 +1,9 @@
 import React, {useState, useEffect} from 'react';
-import {Shape} from './shape'
+// import {Shape} from './shape'
+import {Shape} from './svgShape'
 import tw, {styled, css} from 'twin.macro'
 
-let DrawCanvas = tw.div`
+let DrawCanvas = tw.svg`
   w-full h-full border border-gray-500 relative
 `
 

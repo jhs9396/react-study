@@ -7,12 +7,17 @@ import {Toolbar} from "./component/toolbar";
 import {Theme} from "./style/theme";
 import {BrushIcon} from "./component/icon";
 import {Nav} from "./component/nav";
-import {Draw} from "./component/draw";
+// import {Draw} from "./component/draw";
+import {Draw} from "./component/svgDraw"
 
 export function App(props) {
     let [currentShape, setShape] = useState('rectangle')
+    let [currentColor, setColor] = useState('black')
     let shapeHandler = (shape) => {
         setShape(shape)
+    }
+    let colorHandler = (color) => {
+        setColor(color)
     }
 
     return (
@@ -24,7 +29,7 @@ export function App(props) {
                             <Button icon={'home'}><BrushIcon/></Button>
                             <Button icon={'home'}>move</Button>
                             <Button icon={'home'}>{currentShape}</Button>
-                            <Button icon={'home'}>color</Button>
+                            <Button icon={'home'}>{currentColor}</Button>
                         </Button.Group>
 
                         <Button.Group>
@@ -55,13 +60,13 @@ export function App(props) {
                                 </Nav.Group>
 
                                 <Nav.Group title={'color'}>
-                                    <Nav.Item>
+                                    <Nav.Item onClick={colorHandler.bind(null, 'red')}>
                                         <span></span> red
                                     </Nav.Item>
-                                    <Nav.Item>
+                                    <Nav.Item onClick={colorHandler.bind(null, 'green')}>
                                         green
                                     </Nav.Item>
-                                    <Nav.Item>
+                                    <Nav.Item onClick={colorHandler.bind(null, 'blue')}>
                                         blue
                                     </Nav.Item>
                                 </Nav.Group>
@@ -69,7 +74,8 @@ export function App(props) {
                             </Nav>
                         </Pane.SideBar>
                         <Pane>
-                            <Draw shape={currentShape}/>
+                            {/*<Draw shape={currentShape} color={currentColor}/>*/}
+                            <Draw shape={currentShape} color={currentColor}/>
                         </Pane>
                     </Pane.Group>
 

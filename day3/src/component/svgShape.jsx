@@ -38,28 +38,46 @@ const shapeStyle = (data) => {
     let color = data.color
 
     const rectangle = {
-        border:`1px solid ${color}`,
-        pointerEvents:'none',
         position:'absolute',
+        background: 'rgba(0,0,0,0.1)',
+        fill: 'white',
+        stroke: `${color}`,
         width: width + 'px',
         height: height + 'px',
-        left: left + 'px',
-        top: top + 'px',
+        x: left + 'px',
+        y: top + 'px',
     }
 
     const circle = {
         position: 'absolute',
-        backgroundColor: 'white',
-        border:`1px solid ${color}`,
-        borderRadius: '100%',
-        display: 'inline-block',
-        width: width + 'px',
-        height: height + 'px',
-        left: left + 'px',
-        top: top + 'px'
+        // backgroundColor: 'white',
+        background: 'rgba(0,0,0,0.1)',
+        fill: 'white',
+        stroke:`${color}`,
+        // borderRadius: '100%',
+        // display: 'inline-block',
+        cx: left,
+        cy: top,
+        r: width,
+        // width: width + 'px',
+        // height: height + 'px',
+        // left: left + 'px',
+        // top: top + 'px'
     }
 
-    return 'rectangle' == data.type ? rectangle : circle
+    const line = {
+        stroke:`${color}`,
+        strokeWidth: 2
+    }
+
+    if ('rectangle' == data.type) {
+        return rectangle
+    } else if ('circle' == data.type) {
+        return circle
+    } else {
+        return line
+    }
+    // return 'rectangle' == data.type ? rectangle : circle
 }
 
 /**
@@ -69,11 +87,20 @@ const shapeStyle = (data) => {
  */
 
 const DrawShape = ({data}) => {
+    //
+    // let [points, setPoints] = useState({})
+    //
+    // setPoints(Object.assign({}, points, {
+    //     points: `${data.x1}, ${data.y1} `
+    // }))
+
     switch(data.type) {
         case 'rectangle':
-            return <ShapeTemplate style={shapeStyle(data)}/>
+            return <rect style={shapeStyle(data)}/>
         case 'circle':
-            return <ShapeTemplate style={shapeStyle(data)}/>
+            return <circle style={shapeStyle(data)}/>
+        case 'line':
+            return <line x1={data.x1} y1={data.y1} x2={data.x2} y2={data.y2} style={shapeStyle(data)}></line>
         default:
             return null
     }

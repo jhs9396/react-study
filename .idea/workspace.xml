@@ -1,11 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="316798ae-b56f-46ab-b270-9230627a8ddd" name="Default Changelist" comment="" />
+    <list default="true" id="316798ae-b56f-46ab-b270-9230627a8ddd" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day3/dist/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/day3/dist/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day3/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/day3/src/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day3/src/component/draw.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/day3/src/component/draw.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day3/src/component/shape.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/day3/src/component/shape.jsx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1czibWcyeiamUzCOGpFzXSDVK8g" />
   <component name="ProjectViewState">
@@ -15,6 +25,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="javascript.nodejs.core.library.configured.version" value="10.12.0" />
@@ -31,6 +42,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\project\react-study\day3\src\component" />
       <recent name="D:\project\react-study\day2" />
       <recent name="D:\project\react-study\day3" />
       <recent name="D:\project\react-study\day1" />
@@ -80,6 +92,7 @@
       <workItem from="1591792239599" duration="5047000" />
       <workItem from="1591797379575" duration="9690000" />
       <workItem from="1591883040578" duration="10243000" />
+      <workItem from="1592116893704" duration="7970000" />
     </task>
     <servers />
   </component>
@@ -119,6 +132,10 @@
       <screen x="64" y="0" width="1856" height="1080" />
     </state>
     <state x="156" y="92" width="1672" height="896" key="com.intellij.history.integration.ui.views.FileHistoryDialog/64.0.1856.1080@64.0.1856.1080" timestamp="1591797950291" />
+    <state x="572" y="364" key="com.intellij.ide.util.TipDialog" timestamp="1592116908489">
+      <screen x="64" y="0" width="1856" height="1080" />
+    </state>
+    <state x="572" y="364" key="com.intellij.ide.util.TipDialog/64.0.1856.1080@64.0.1856.1080" timestamp="1592116908489" />
     <state x="638" y="155" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1591892733806">
       <screen x="64" y="0" width="1856" height="1080" />
     </state>
